@@ -11,6 +11,9 @@ spring:
   output:
     ansi:
       enabled: ALWAYS
+  #模板路径
+  thymeleaf:
+    prefix: /WEB-INF/templates/
 #pagehelper配置
 pagehelper:
   helper-dialect: mysql
