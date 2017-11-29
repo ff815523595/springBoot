@@ -1,0 +1,24 @@
+spring:
+  datasource:
+    ##导入指定的sql
+    schema: import.sql
+    url: jdbc:mysql://localhost:3306/spring-boot?useUnicode=true&characterEncoding=utf-8&useSSL=false
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.jdbc.Driver
+    platform: mysql
+  #彩色日志
+  output:
+    ansi:
+      enabled: ALWAYS
+#pagehelper配置
+pagehelper:
+  helper-dialect: mysql
+  reasonable: true
+  support-methods-arguments: true
+  offset-as-page-num: true
+#日志
+
+logging:
+  config: classpath:config/log/logback-spring.xml
+
