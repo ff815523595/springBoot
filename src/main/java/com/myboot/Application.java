@@ -5,6 +5,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.web.servlet.ServletComponentScan;
 import org.springframework.context.annotation.ComponentScan;
+import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 /**
  * Created by a on 2017/10/10.
@@ -13,6 +14,7 @@ import org.springframework.context.annotation.ComponentScan;
 @ComponentScan("com.myboot")
 @MapperScan(basePackages = "com.myboot.mapper")
 @ServletComponentScan(basePackages = "com.myboot.servlet")
+@EnableTransactionManagement
 /*@ImportResource(locations={"classpath:application-bean.xml"}) 可导入指定的xml文件*/
 public class Application {
 
