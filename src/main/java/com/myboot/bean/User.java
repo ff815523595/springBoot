@@ -12,7 +12,11 @@ public class User implements Serializable {
 
     private String name;
 
+    private String passWord;
+
     private int age;
+
+    private String status;
 
     public String getUserid() {
         return userid;
@@ -36,5 +40,28 @@ public class User implements Serializable {
 
     public void setAge(int age) {
         this.age = age;
+    }
+
+    public User(){};
+
+    public User(String userName , String passWord){
+        this.name = userName;
+        this.passWord = passWord;
+    }
+
+    public String getPassWord() {
+        return passWord;
+    }
+
+    public void setPassWord(String passWord) {
+        this.passWord = passWord;
+    }
+
+    public String getStatus() {
+        return status;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
     }
 }

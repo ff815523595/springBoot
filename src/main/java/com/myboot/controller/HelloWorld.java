@@ -1,7 +1,6 @@
 package com.myboot.controller;
 
 import com.myboot.bean.User;
-import com.myboot.common.MybatisConfig;
 import com.myboot.service.IUserService;
 
 
@@ -22,8 +21,6 @@ public class HelloWorld {
 
     private final static Logger logger = LoggerFactory.getLogger(HelloWorld.class);
 
-    @Autowired
-    private MybatisConfig emailConfig;
     @Autowired
     private IUserService userService;
 
