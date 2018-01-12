@@ -110,12 +110,12 @@
             <pattern>===%d{yyyy-MM-dd HH:mm:ss.SSS} %-5level %logger Line:%-3L - %msg%n</pattern>
             <charset>utf-8</charset>
         </encoder>
-        <!-- 此日志文件只记录info级别的
+        <!-- 此日志文件只记录info级别的-->
         <filter class="ch.qos.logback.classic.filter.LevelFilter">
             <level>info</level>
             <onMatch>ACCEPT</onMatch>
             <onMismatch>DENY</onMismatch>
-        </filter> -->
+        </filter>
     </appender>
 
 

@@ -1,15 +1,11 @@
 spring:
   datasource:
-    ##导入指定的sql
-    #schema: import.sql
-    #数据源
-    type: com.alibaba.druid.pool.DruidDataSource
-    url: jdbc:mysql://localhost:3306/spring-boot?useUnicode=true&characterEncoding=utf-8&useSSL=false
-    username: root
-    password: 123456
-    driver-class-name: com.mysql.jdbc.Driver
-    platform: mysql
-    filters: stat,wall,log4j # 配置监控统计拦截的filters，去掉后监控界面sql无法统计，'wall'用于防火墙(springboot下该配置失效....)
+    druid:
+      url: jdbc:mysql://localhost:3306/spring-boot?useUnicode=true&characterEncoding=utf-8&useSSL=false
+      username: root
+      password: 123456
+      driver-class-name: com.mysql.jdbc.Driver
+      filters: stat,wall,log4j # 配置监控统计拦截的filters
   #彩色日志
   output:
     ansi:
